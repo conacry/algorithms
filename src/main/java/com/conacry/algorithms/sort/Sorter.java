@@ -1,4 +1,4 @@
-package com.conacry.algorithms;
+package com.conacry.algorithms.sort;
 
 public interface Sorter {
 
