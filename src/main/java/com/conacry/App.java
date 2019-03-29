@@ -12,7 +12,7 @@ public class App {
     public static void main( String[] args ) {
         long[] array = { 2, 1, 4, 6, 3, 5 };
 
-        Sorter sorter = SorterFactory.getSorter(SorterType.INSERTION_SORT, Order.DIRECT);
+        Sorter sorter = SorterFactory.getSorter(SorterType.MERGE_SORT, Order.REVERSE);
         sorter.sort(array);
         System.out.println(Arrays.toString(array));
     }

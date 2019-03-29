@@ -6,6 +6,8 @@ import com.conacry.algorithms.sort.common.Order;
 import com.conacry.algorithms.sort.common.SorterType;
 import com.conacry.algorithms.sort.insertionsort.InsertionSorterDirect;
 import com.conacry.algorithms.sort.insertionsort.InsertionSorterReverse;
+import com.conacry.algorithms.sort.mergesort.MergeSorterDirect;
+import com.conacry.algorithms.sort.mergesort.MergeSorterReverse;
 
 public class SorterFactory {
 
@@ -18,6 +20,9 @@ public class SorterFactory {
             if (sorterType == SorterType.INSERTION_SORT) {
                 return new InsertionSorterDirect();
             }
+            if (sorterType == SorterType.MERGE_SORT) {
+                return new MergeSorterDirect();
+            }
         }
 
         if (order == Order.REVERSE) {
@@ -26,6 +31,9 @@ public class SorterFactory {
             }
             if (sorterType == SorterType.INSERTION_SORT) {
                 return new InsertionSorterReverse();
+            }
+            if (sorterType == SorterType.MERGE_SORT) {
+                return new MergeSorterReverse();
             }
         }
 
