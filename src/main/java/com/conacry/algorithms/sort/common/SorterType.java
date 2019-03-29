@@ -1,4 +1,4 @@
-package com.conacry.algorithms.common;
+package com.conacry.algorithms.sort.common;
 
 public enum SorterType {
     BUBBLE_SORT,
