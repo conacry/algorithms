@@ -2,6 +2,8 @@ package com.conacry.algorithms;
 
 import com.conacry.algorithms.bubblesort.BubbleSortDirect;
 import com.conacry.algorithms.bubblesort.BubbleSortReverse;
+import com.conacry.algorithms.common.Order;
+import com.conacry.algorithms.common.SorterType;
 
 public class SorterFactory {
 
