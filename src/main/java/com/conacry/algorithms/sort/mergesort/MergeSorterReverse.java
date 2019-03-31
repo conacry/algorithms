@@ -4,6 +4,7 @@ import com.conacry.algorithms.sort.Sorter;
 
 public class MergeSorterReverse implements Sorter {
 
+    @Override
     public void sort(long[] array) {
         mergeSort(array, array.length);
     }
@@ -17,13 +18,8 @@ public class MergeSorterReverse implements Sorter {
         long[] leftArray = new long[mid];
         long[] rightArray = new long[n - mid];
 
-        for (int i = 0; i < mid; i++) {
-            leftArray[i] = array[i];
-        }
-
-        for (int i = mid; i < n; i++) {
-            rightArray[i - mid] = array[i];
-        }
+        System.arraycopy(array, 0, leftArray, 0, mid);
+        System.arraycopy(array, mid, rightArray, 0, n - mid);
 
         mergeSort(leftArray, mid);
         mergeSort(rightArray, n - mid);

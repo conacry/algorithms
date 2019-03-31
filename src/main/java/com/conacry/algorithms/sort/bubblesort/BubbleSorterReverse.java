@@ -4,6 +4,7 @@ import com.conacry.algorithms.sort.Sorter;
 
 public class BubbleSorterReverse implements Sorter {
 
+    @Override
     public void sort(long[] array) {
         int n = array.length;
         
