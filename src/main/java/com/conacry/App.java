@@ -35,7 +35,7 @@ public class App {
 
         System.out.println(timeElapsed);
 
-        Sorter reverseSorter = SorterFactory.getSorter(SorterType.QUICK_SORT, Order.REVERSE);
+        Sorter reverseSorter = SorterFactory.getSorter(SorterType.MERGE_SORT, Order.DIRECT);
         
         Instant secontStart = Instant.now();
 
